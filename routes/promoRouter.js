@@ -1,5 +1,10 @@
-const express = require('express');
+
+ const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+
+const Dishes = require('../models/dishes');
+
 
 const promoRouter = express.Router();
 
@@ -43,4 +48,4 @@ promoRouter.route('/:promoId')
         res.end('Deleting promotion: ' + req.params.promoId);
     });
 
-    exports.router = promoRouter;
+    module.exports = promoRouter;
