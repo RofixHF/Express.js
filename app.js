@@ -12,6 +12,8 @@ var users = require('./routes/users');
 var dishRouter = require('./routes/dishRouter');
 var promoRouter = require('./routes/promoRouter');
 var leaderRouter = require('./routes/leaderRouter');
+var uploadRouter = require('./routes/uploadruter');
+
 var config = require('./config');
 
 const mongoose = require('mongoose');
